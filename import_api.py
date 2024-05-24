@@ -10,7 +10,6 @@ dico_menu_api = requests.get(lien_api_dnd + "/api").json()  # ?name=Acid+Arrow
 dict_races_api = requests.get(lien_api_dnd + dico_menu_api["races"]).json()
 liste_url_races = [lien_api_dnd + dict_races_api["results"][i]["url"] for i in range(len(dict_races_api["results"]))]
 
-
 liste_dico_all_race = [requests.get(races).json() for races in liste_url_races]
 
 if __name__ == "__main__":
