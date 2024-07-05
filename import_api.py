@@ -14,6 +14,7 @@ liste_dico_all_race = [requests.get(races).json() for races in liste_url_races]
 
 if __name__ == "__main__":
     # pprint(liste_dico_all_race[0])
+    print("ok")
     pass
 # print([lien_api_dnd + all_races for all_races in liste_url_races])
 
